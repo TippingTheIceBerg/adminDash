@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: solid rgba(0 0 0/ .3);
+
+    
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-columns: .3fr 1fr;
+}
+
+img{
+    height: 100px;
+    aspect-ratio: 1;
+}
+/* aside NAV bar */
+
+aside{
+    height: 100vh;
+    padding: 10px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    font-size: 1.3em;
+}
+nav i{
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+.nav__logo{
+    display: grid;
+    row-gap: 20px;
+    font-size: 1.4em;
+}
+
+.nav__actions{
+    display: grid;
+    grid-template-rows: repeat(1fr,6);
+    row-gap: 20px;
+}
+.nav__settings{
+    display: grid;
+    grid-template-rows: repeat(1fr,3);
+    row-gap: 20px;
+}
+
+/* user top */
+.user__top{
+    display: grid;
+    grid-template-columns: 1fr 1.4fr ;
+    grid-template-rows:1fr 1fr ;
+    padding: 20px;
+}
+
+.user__search{
+    justify-self: left;
+    align-self: center;
+}
+
+.user__search input[type=text]{
+    width: 550px;
+    appearance: none;
+    border-radius: 100px;
+    height: 30px;
+    background-color: rgba(148, 170, 235, 0.1);
+    justify-self: center;
+    margin-left: 20px;
+}
+/* user greeting section */
+.user__greeting{
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    column-gap: 20px ;
+}
+
+.greeting__icon{
+    justify-self: right;
+    border-radius: 100%;
+    align-self: center;
+}
+.greeting__text{
+    display: grid;
+    row-gap: 10px;
+}
+
+.greeting__text p{
+    align-self: end;
+}
+.greeting__text span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* user alert section */
+
+.user__alert{
+    display: grid;
+    grid-template-columns: .3fr .2fr 1fr;
+
+}
+.user__alert img{
+    align-self: center;
+    justify-self: center;
+    border-radius: 100%;
+    height: 50px;
+    aspect-ratio: 1;
+}
+
+.user__alert p, .user__alert i{
+    align-self: center;
+}
+
+.user__alert p{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.user__alert i{
+    justify-self: right;
+    font-size: 1.5em;
+}
+
+/* upload section */
+.user__uploads{
+    display:grid;
+    grid-template-columns: .2fr .2fr .2fr;
+    align-content: end;
+    justify-items: center;
+}
+.user__uploads input[type=button]{
+    height: 50px;
+    width: 100px;
+    appearance: none;
+    outline: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
