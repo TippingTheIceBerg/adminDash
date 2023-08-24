@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --white:#fcfcfc;
+    --darkBlue:#39586D ;
+}
 a{
     text-decoration: none;
 }
@@ -19,17 +23,26 @@ img{
 
 aside{
     height: 100vh;
-    padding: 10px;
+    padding: 20px;
+    background-color: var(--darkBlue) ;
+    position: sticky;
+    top: 0px;
+    
 }
 nav{
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 50px;
     font-size: 1.3em;
+    
 }
 nav i{
     margin-right: 20px;
     font-size: 1.2em;
+    color: var(--white);
+}
+nav a{
+    color: var(--white);
 }
 .nav__logo{
     display: grid;
@@ -131,6 +144,7 @@ nav i{
     align-content: end;
     justify-items: center;
     column-gap: 20px;
+    
 }
 .user__uploads input[type=button]{
     height: 50px;
@@ -139,6 +153,9 @@ nav i{
     outline: none;
     border-radius: 30px;
     margin-bottom: 10px;
+    background-color: #39586D;
+    color:var(--white);
+    font-size: .98em;
 }
 
 /* main card containers */
@@ -146,8 +163,8 @@ nav i{
 main{
     background-color: rgb( 0 0 0 /.1);
     display: grid;
-    padding: 20px;
-    grid-template-columns: 2fr .6fr;
+    padding: 30px;
+    grid-template-columns: 2fr .65fr;
 }
 
 
@@ -177,7 +194,7 @@ main{
 .socialFeed{
     display: grid;
     gap:20px;
-    grid-template-rows: 20px 1fr;
+    grid-template-rows: 20px .75fr;
 }
 .announcement{
     display: grid;
@@ -187,9 +204,11 @@ main{
 }
 
 .ann__card{
-    padding: 20px;
+    display: grid;
+    padding: 10px 40px;
     position: relative;
-    font-size: .9em;
+    align-content: center;
+
     
 }
 
@@ -199,9 +218,37 @@ main{
     width: 73%;
     border-bottom: solid rgb(0 0 0/.2);
     bottom: 0;
+    left: 30px;
 }
 
-.trending{
+.trending__container{
     display: grid;
+    grid-template-rows: 30px .95fr;
+}
+.trending__cards{
+    display: grid;
+    background-color: white;
+    padding: 20px;
+    row-gap: 10px;
+    border-radius: 20px;
+}
+.trending__card{
+    display:grid;
+    grid-template-columns: .5fr 1fr;
+    align-content: center;
+}
+
+.trending__card img{
+    border-radius: 100px;
+    height: 60px;
+    aspect-ratio: 1;
+}
+.trending__userTag{
+    display: grid;
+    align-content: center;
+}
+
+.trending__userTag > p{
+    margin-bottom: 5px;
 }
 
