@@ -43,6 +43,7 @@ nav i{
 }
 nav a{
     color: var(--white);
+    transition: all linear .2s;
 }
 .nav__logo{
     display: grid;
@@ -265,6 +266,10 @@ main{
 }
 
 @media screen and (min-width: 700px) {
+    nav a:hover{
+        text-decoration: underline;
+
+    }
     .card:hover{
         box-shadow: 5px 5px rgb(0 0 0 /.5);
         transform: scale(1.03);
