@@ -178,7 +178,7 @@ main{
 
 .card__container{
     display: grid;
-    grid-template-columns: .47fr .47fr;
+    grid-template-columns: repeat(2,minmax(150px,.47fr));
     gap: 35px;
     padding: 20px 0;
 }
@@ -265,7 +265,7 @@ main{
     margin-bottom: 5px;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 800px) {
     nav a:hover{
         text-decoration: underline;
 
@@ -289,6 +289,20 @@ main{
         cursor: pointer;
         border-radius: 10px;
     }
+
+}
+
+@media screen and (max-width: 500px) {
+
+main{
+    column-gap: 20px;
+}
+.card__container{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+.card{
+    font-size: 1em;
+}
 
     
 }
